@@ -56,15 +56,12 @@ text-shadow:
 }
 
 p {
-    color: #09024b;
-    -webkit-text-stroke: 0.5px #00ff2a;
+    color: #00ff2a;
+    -webkit-text-stroke: 0.1px #00ff2a;
     font-family: "Comic Sans MS", Helvetica Rounded, Arial, sans-serif;
     font-size: 21px;
     line-height: 1.6;
-    text-shadow:     0 0 15px  rgba(245, 243, 104, 0.822),
-    0 0 20px  rgba(214, 235, 97, 0.801),
-    0 0 30px rgba(201, 236, 106, 0.774),
-    0 0 50px rgba(250, 229, 113, 0.911);
+  
 }
 
 .button {
