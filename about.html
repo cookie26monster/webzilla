@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>About</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+<style>
+
+  body {
+    background-color: #fdcf04;
+    background-image: url('WZbg14.jpeg');
+    background-repeat: no-repeat;
+    background-position: center 0px;
+    background-size: cover;
+    background-attachment: scroll;
+  }
+  body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  pointer-events: none;
+  z-index: -1;
+}
+
+    #myBtn {
+      background-color: #f7f305;
+      color: #000000;
+    }
+</style>
+
+</head>
+
+<body>
+<a id="top"></a>
+<header>
+
+    <a href="#" class="image-link">
+  <img src="WZlogo.png" alt="Description">
+  <p><span class="circled-letter">Z</span></p>
+</a>
+
+<button class="menu-button" id="menuButton"
+        aria-label="Open menu"
+        aria-expanded="false">
+    ☰
+</button>
+
+<nav id="sideMenu">
+    <button class="close-menu" id="closeMenu"
+            aria-label="Close menu">
+        &times;
+    </button>
+
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="sites.html">Site Examples</a>
+        <a href="security.html">Security</a>        
+        <a href="contact.html">Contact Us</a>
+    </nav>
+
+</header>
+
+    <main>
+
+        <h1><strong>What to expect</strong></h1>
+
+<h3><strong>Not too much... hopefully</strong></h3>
+
+
+<p>A</p>
+<p>B</p>
+<p>C</p>
+<p>D</p>
+<p>E</p>
+
+<h3>Sub heading</h3>
+
+<p>F</p>
+<p>G</p>
+<p>H</p>
+<p>I</p>
+<p>J</p>
+<p>K</p>
+
+<h3><strong>Check Our Social Media</strong></h3>
+
+        <a class="button" href="#">link to instagram</a>
+
+        <a class="button" href="#">link to facebook</a>
+
+        <a class="button" href="#">link to tiktok</a>
+
+        <a class="button" href="#">link to twitter</a>
+
+<p>If you would like to chat, you can book an intro call</p>
+
+        <a class="button" href="#">Book An Intro Call</a>
+
+<p>If you are ready to start</p>
+
+        <a class="button" href="#">Book Now</a>        
+
+    </main>
+
+<a href="#"  id="myBtn" class="back-to-top">^^^&nbsp; Back to Top &nbsp; ^^^</a>
+
+<footer>
+&copy;2026 web <span class="circled-letter">Z</span> illa
+</footer>    
+
+<script>
+const menu = document.getElementById('sideMenu');
+const menuButton = document.getElementById('menuButton');
+const closeButton = document.getElementById('closeMenu');
+
+function openMenu() {
+    menu.classList.add('open');
+    menuButton.setAttribute('aria-expanded', 'true');
+}
+
+function closeMenu() {
+    menu.classList.remove('open');
+    menuButton.setAttribute('aria-expanded', 'false');
+}
+
+menuButton.addEventListener('click', openMenu);
+closeButton.addEventListener('click', closeMenu);
+
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape') {
+        closeMenu();
+    }
+});
+</script>
+
+</body>
+
+</html>

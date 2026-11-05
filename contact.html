@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact Us</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+<style>
+
+  body {
+    background-color: #fdcf04;
+    background-image: url('WZbg14.jpeg');
+    background-repeat: no-repeat;
+    background-position: center 0px;
+    background-size: cover;
+    background-attachment: scroll;
+  }
+  body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  pointer-events: none;
+  z-index: -1;
+}
+
+    #myBtn {
+      background-color: #f7f305;
+      color: #000000;
+    }
+</style>
+
+</head>
+
+<body>
+<a id="top"></a>
+<header>
+
+
+
+    <a href="#" class="image-link">
+  <img src="WZlogo.png" alt="Description">
+  <p><span class="circled-letter">Z</span></p>
+</a>
+
+<button class="menu-button" id="menuButton"
+        aria-label="Open menu"
+        aria-expanded="false">
+    ☰
+</button>
+
+<nav id="sideMenu">
+    <button class="close-menu" id="closeMenu"
+            aria-label="Close menu">
+        &times;
+    </button>
+
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="sites.html">Site Examples</a>
+        <a href="security.html">Security</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+
+</header>
+
+    <main>
+
+        <h1><strong>Contact Us</strong></h1>
+
+        <h3>If you would like to talk about what you need</h3>
+
+        <p>We would love to hear from you.</p>
+
+        <p>Email: us@email.com</p>
+
+        <a class="button" href="mailto:your@email.com">Email Us</a>
+
+        <p>Phone: 01234567890</p>
+
+        <a class="button" href="#">Call Us</a>
+
+    </main>
+
+<a href="#"  id="myBtn" class="back-to-top">^^^&nbsp; Back to Top &nbsp;^^^</a>
+
+<footer>
+&copy;2026 web <span class="circled-letter">Z</span> illa
+</footer>
+
+<script>
+const menu = document.getElementById('sideMenu');
+const menuButton = document.getElementById('menuButton');
+const closeButton = document.getElementById('closeMenu');
+
+function openMenu() {
+    menu.classList.add('open');
+    menuButton.setAttribute('aria-expanded', 'true');
+}
+
+function closeMenu() {
+    menu.classList.remove('open');
+    menuButton.setAttribute('aria-expanded', 'false');
+}
+
+menuButton.addEventListener('click', openMenu);
+closeButton.addEventListener('click', closeMenu);
+
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape') {
+        closeMenu();
+    }
+});
+</script>
+
+</body>
+
+</html>
