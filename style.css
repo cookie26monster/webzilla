@@ -15,27 +15,6 @@ header {
     min-height: 360px;
 }
 
-.logo {
-    font-size: 100px;
-    font-weight: bold;
-    font-family: "Arial Rounded MT", Helvetica Rounded, Arial, sans-serif;
-    letter-spacing: 10px;
-    margin-top: 0px;
-    margin-bottom: 2mm;
-    transform: none;
-
-    color: #000000;
-
-    text-shadow:
-        0 -2px 0 #00ff2a,
-        0px 2px 0 #b705c7,
-
-        1px 0px 0 #fffc31,
-
-        2px 3px 0 #fffc31,
-        4px 6px 10px rgba(0, 0, 0, 0.85);
-}
-
 main {
     max-width: 900px;
     margin: 70px auto;
