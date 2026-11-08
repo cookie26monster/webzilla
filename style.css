@@ -17,7 +17,7 @@ header {
 
 main {
     max-width: 900px;
-    margin: 70px auto;
+    margin: 20px auto 70px auto;
     padding: 0px;
     text-align: center;
 }
@@ -104,11 +104,6 @@ margin-bottom: 18px;
         padding: 8px 10px;
     }
 
-    .logo {
-        font-size: 36px;
-        letter-spacing: 6px;
-    }
-
     header a {
         display: inline-block;
         margin: 0px 7px;
@@ -131,15 +126,11 @@ margin-bottom: 18px;
 }
 
 @media (max-width: 768px) {
-    .logo-area {
-        flex-direction: row;
-        gap: 0px;
+
+    header {
+        min-height: 180px;
     }
 
-    .logo-area img {
-        width: 60px;
-    
-    }
 }
 
     @media (max-width: 600px) {
